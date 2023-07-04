@@ -1,9 +1,7 @@
 package exercicio1
-
 class SomarNumeros(val numero: Int) {
-
     fun somatoria() {
-        var soma = 0.0
+        var soma = 0
         for (i in 1..numero) {
             soma += i
         }

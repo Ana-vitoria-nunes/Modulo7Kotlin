@@ -15,12 +15,14 @@ fun main(){
 
 }
 fun encontrarMenorNumero(numeros: DoubleArray) {
-    var menor = numeros[0]
-    for (i in 1 until numeros.size) {
-        if (numeros[i] < menor) {
-            menor = numeros[i]
-        }
-    }
-    println("O menor número digitado é: $menor")
+    println("O menor número digitado é: ${numeros.min()}")
+//    var menor = numeros[0]
+//    for (i in 1 until numeros.size) {
+//        if (numeros[i] < menor) {
+//            menor = numeros[i]
+//        }
+//    }
+//    println("O menor número digitado é: $menor")
 }
+
 

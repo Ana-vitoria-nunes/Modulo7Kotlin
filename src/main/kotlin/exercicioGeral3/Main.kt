@@ -5,7 +5,7 @@ fun main(){
     val nome = readln()
     println("Digite o salário fixo do vendedor:")
     val salarioFixo = readln().toDouble()
-    println("Digite o total de vendas efetuadas pelo vendedor:")
+    println("Digite o total de vendas efetuadas em dinheiro:")
     val totalVendas = readln().toDouble()
     CalcularComissao(nome,salarioFixo,totalVendas)
 

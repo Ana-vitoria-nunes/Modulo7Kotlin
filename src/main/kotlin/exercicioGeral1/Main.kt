@@ -18,5 +18,12 @@ fun MostrarCalculos(numero1: Double,numero2: Double){
     println("Soma: $soma")
     println("Subtração: $subtracao")
     println("Multiplicação: $multiplicacao")
-    println("Divisão: $divisao")
+
+    if (numero1==0.0 || numero2==0.0){
+        println("Não é possivel fazer divisão com 0")
+    }
+    else{
+        println("Divisão: $divisao")
+    }
+
 }
