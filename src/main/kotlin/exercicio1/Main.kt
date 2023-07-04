@@ -1,9 +1,16 @@
 package exercicio1
-fun main() {
-    println("Digite um número:")
-    var resposta= readln().toInt()
+fun main(){
+    val tamanhoVetor = 5
+    val vetor = IntArray(tamanhoVetor)
 
-    println("Número atual: $resposta")
-    resposta-=1
-    println("Número antecessor: $resposta")
+    println("Digite $tamanhoVetor valores inteiros:")
+
+    var i=0
+    while (i<tamanhoVetor){
+        print("Valor ${i + 1} :")
+        vetor[i] = readln().toInt()
+        i++
+    }
+    val soma=vetor.sum()
+    println("A soma dos valores é: $soma")
 }

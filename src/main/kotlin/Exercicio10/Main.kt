@@ -1,9 +1,12 @@
 package Exercicio10
-fun main(){
+fun main() {
+    var numero = 1
+    var soma = 0
 
-    println("Digite um número:")
-    val resposta= readln().toInt()
+    do {
+        soma += numero
+        numero++
+    } while (numero <= 15)
 
-    println("Número atual: $resposta")
-    NumeroSucessor(resposta).exibirNumeroSucessor()
+    println("A soma dos números de 1 a 15 é: $soma")
 }
